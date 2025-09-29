@@ -1,0 +1,12 @@
+:root {
+  --mid-pink: #d8a48f;
+  --dark-pink: #bb8588;
+  --mid-green: #d6ce93;
+  --dark-green: #a3a380;
+  --light-green: #efebce;
+  --white: rgba(245, 245, 245, 1);
+  --black: rgba(23, 33, 10);
+
+  --ff-heading: font-name;
+  --ff-body: font-name;
+}

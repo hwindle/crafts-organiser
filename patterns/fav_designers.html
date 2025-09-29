@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patterns - Designers | Knitting Organiser</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Knitting Organiser</h1>
+      <h2>Patterns - Designers</h2>
+    </header>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../yarn.html">Yarn</a></li>
+        <li><a href="../queue.html">Queue</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../patterns.html">Patterns</a></li>
+        <li><a href="../crochet.html">Crochet</a></li>
+      </ul>
+    </nav>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Date Added</th>
+            <th>Edit Button</th>
+            <th>Delete Button</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Link Title</td>
+            <td>Designer/author</td>
+            <td>Date added</td>
+            <td>
+              <button><a href="#">Edit Link</a></button>
+            </td>
+            <td>
+              <button>
+                <a href="#">Remove Link</a>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav id="secondary-nav">
+        <div class="grid">
+          <button>
+            <a href="#">Add Link</a>
+          </button>
+        </div>
+      </nav>
+      <div class="modal">
+        <h3>Add Designer Link</h3>
+        <form action="post">
+          <div class="form-row">
+            <label for="url">Website</label>
+            <input type="url" name="url" id="url" required>
+          </div>
+          <div class="form-row">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+          </div>
+          <div class="form-row">
+            <label for="author">Designer/Author</label>
+            <input type="text" name="author" id="author" required>
+          </div>
+          <input class="submit-btn" type="submit" value="Add Link">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; Hazel Windle 2025. Made with Django and a JavaScript
+        framework/toolkit.
+      </p>
+    </footer>
+  </body>
+</html>

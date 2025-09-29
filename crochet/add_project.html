@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crochet Organiser</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Knitting Organiser</h1>
+      <h2>Add Crochet Project</h2>
+    </header>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../yarn.html">Yarn</a></li>
+        <li><a href="../queue.html">Queue</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../patterns.html">Patterns</a></li>
+        <li><a href="../crochet.html">Crochet</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form>
+        <div class="form-row">
+          <label for="title">Title</label>
+          <input type="text" name="title" required />
+        </div>
+        <div class="form-row">
+          <label for="yarns">Yarns Used</label>
+          <input type="text" name="yarns" />
+        </div>
+        <div class="form-row">
+          <label for="image">Upload Image</label>
+          <input type="image" name="image" />
+        </div>
+        <div class="form-row">
+          <h4>Hook Type</h4>
+          <fieldset>
+            <div class="radio-btn-option">
+              <input type="radio" name="hook-type" id="hook-type1" value="crochet" checked>
+              <label for="hook-type1">Crochet</label> 
+            </div>
+            <div class="radio-btn-option">
+              <input type="radio" name="hook-type" id="hook-type2" value="tunisian">
+              <label for="hook-type2">Tunisian</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-row">
+          <label for="hook-size">Hook Size (mm)</label>
+          <input type="number" min="0.25" max="25" value="4">
+        </div>
+        <div class="form-row">
+          <div class="half-row">
+            <label for="start-date">Started</label>
+            <input type="date" name="start-date" required>
+          </div>
+          <div class="half-row">
+            <label for="end-date">Ended</label>
+            <input type="date" name="end-date">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="pattern">Pattern</label>
+          <input type="text" name="pattern">
+        </div>
+        <div class="form-row">
+          <h5>Notes</h5>
+          <textarea name="notes" id="notes"></textarea>
+        </div>
+        <input class="submit-button" type="submit" value="Add Project">
+      </form>
+      <nav id="secondary-nav">
+        <div class="grid">
+          <button>Add another project</button>
+          <button><a href="../crochet.html">Go Back to Crochet</a></button>
+        </div>
+      </nav>
+    </main>
+    <footer>
+      <p>
+        &copy; Hazel Windle 2025. Made with Django and a JavaScript
+        framework/toolkit.
+      </p>
+    </footer>
+  </body>
+</html>

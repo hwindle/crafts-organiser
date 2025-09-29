@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yarn | Knitting Organiser</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Knitting Organiser</h1>
+      <h2>Yarn no id</h2>
+    </header>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../yarn.html">Yarn</a></li>
+        <li><a href="../queue.html">Queue</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../patterns.html">Patterns</a></li>
+        <li><a href="../crochet.html">Crochet</a></li>
+      </ul>
+    </nav>
+    <main>
+      
+      <div class="yarn-details">
+        <h3>Stylecraft - Belissima</h3>
+        <section class="yarn-spec">
+          <p><strong>DK</strong>, 268 metres
+            to 100g.</p>
+          <p><strong>Fibres:</strong> Acrylic</p>
+          <p><strong>Approximate price:</strong> £3.15</p>
+          <!-- {{ ($yarn->handspun == 1) ? 'Handspun' : '' }} -->
+          <p><strong>Handspun:</strong> True/false</p>
+          <!-- put putup name into CSS, to change background img of div to pencil
+           drawing of hank, ball or roll, spool or cone -->
+          <p class="ball"><strong>Packaging: </strong> ball</p>
+          <p><strong>Construction:</strong> 10 ply</p>
+          <p><strong>Quantity:</strong> 1</p>
+          <p><strong>Colourway:</strong> Cream</p>
+          <figure>
+            <img src="../pics/yarn.jpg" alt="yarn-image">
+            <figcaption>Yarn Image (optional)</figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <nav id="secondary-nav">
+        <div class="grid">
+          <button><a href="add_yarn.html">Add a yarn</a></button>
+          <button><a href="../yarn.html">Go Back to yarn</a></button>
+        </div>
+      </nav>
+    </main>
+    <footer>
+      <p>
+        &copy; Hazel Windle 2025. Made with Django and a JavaScript
+        framework/toolkit.
+      </p>
+    </footer>
+  </body>
+</html>

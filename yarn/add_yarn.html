@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Yarn | Knitting Organiser</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Knitting Organiser</h1>
+      <h2>Add Yarn</h2>
+    </header>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../yarn.html">Yarn</a></li>
+        <li><a href="../queue.html">Queue</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../patterns.html">Patterns</a></li>
+        <li><a href="../crochet.html">Crochet</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form>
+
+
+
+        <div class="form-row">
+          <label for="brand">Brand</label>
+          <input type="text" name="brand" required />
+        </div>
+        <div class="form-row">
+          <label for="name">Yarn name</label>
+          <input type="text" name="name" id="name" required/>
+        </div>
+        <div class="form-row">
+          <label for="image">Upload Image</label>
+          <input type="image" name="image" />
+        </div>
+        <div class="form-row">
+          <label for="weight">Weight</label>
+          <select name="weight" id="weight">
+            <option value="lace">Lace</option>
+            <option value="3ply">3ply</option>
+            <option value="4ply">4ply, sock</option>
+            <option value="5ply">5ply</option>
+            <option value="sport">Sport</option>
+            <option value="DK" default>DK</option>
+            <option value="Worsted">Worsted</option>
+            <option value="Aran">Aran</option>
+            <option value="Chunky">Chunky</option>
+            <option value="Super Chunky">Super Chunky</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <h4>Packaging (put up)</h4>
+          <fieldset>
+            <div class="radio-btn-option">
+              <input type="radio" name="put-up" id="put-up1" value="Ball" checked>
+              <label for="put-up1">Ball</label> 
+            </div>
+            <div class="radio-btn-option">
+              <input type="radio" name="put-up" id="put-up2" value="Hank">
+              <label for="put-up2">Hank</label>
+            </div>
+            <div class="radio-btn-option">
+              <input type="radio" name="put-up" id="put-up3" value="Cake">
+              <label for="put-up3">Cake</label>
+            </div>
+            <div class="radio-btn-option">
+              <input type="radio" name="put-up" id="put-up4" value="Donut">
+              <label for="put-up4">Donut</label>
+            </div>
+            <div class="radio-btn-option">
+              <input type="radio" name="put-up" id="put-up5" value="Cone">
+              <label for="put-up5">Cone</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-row">
+        <div class="half-row">
+          <label for="ball-weight">Ball Weight (g)</label>
+          <input type="number" min="1" max="1000" value="100" required>
+        </div>
+        <div class="half-row">
+          <label for="metres_per_ball">Metres per ball</label>
+          <input type="number" min="1" max="2500" value="260" required>
+        </div>
+      </div>
+        <div class="form-row">
+          <div class="half-row">
+            <label for="buy-date">Brought</label>
+            <input type="date" name="buy-date" required>
+          </div>
+          <div class="half-row">
+            <label for="used-date">Used On</label>
+            <input type="date" name="used-date">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="fibre">Fibre</label>
+          <input type="text" name="fibre" id="fibre" value="Wool" required>
+        </div>
+        <div class="form-row">
+          <h5>Construction Notes</h5>
+          <textarea name="c_notes" id="c_notes"></textarea>
+        </div>
+        <div class="form-row">
+          <label for="colourway">Colourway</label>
+          <input type="text" name="colourway" id="colourway" required>
+        </div>
+        <div class="form-row">
+          <div class="half-row">
+            <label for="price_per_ball">Price (£) per 100g</label>
+            <input type="number" min="0" max="300" value="5">
+          </div>
+          <div class="half-row">
+            <label for="quantity">Quantity Brought</label>
+            <input type="number" min="1" max="200" value="1" required>
+          </div>
+        </div>
+        <input class="submit-button" type="submit" value="Add Yarn">
+      </form>
+      <nav id="secondary-nav">
+        <div class="grid">
+          <button><a href="../yarn.html">Go Back to yarn</a></button>
+        </div>
+      </nav>
+    </main>
+    <footer>
+      <p>
+        &copy; Hazel Windle 2025. Made with Django and a JavaScript
+        framework/toolkit.
+      </p>
+    </footer>
+  </body>
+</html>

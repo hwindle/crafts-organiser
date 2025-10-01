@@ -1,0 +1,16 @@
+header {
+  background: linear-gradient(to right bottom, var(--dark-pink), var(--mid-pink), var(--light-green), var(--mid-green), var(--dark-green));
+  border: 1px solid var(--dark-pink);
+  border-radius: 10px;
+  box-shadow: 3px 10px 3px var(--mid-pink);
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  background-color: var(--mid-pink);
+}
+
